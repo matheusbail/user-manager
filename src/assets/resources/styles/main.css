@@ -1,7 +1,12 @@
 body {
     font-family: 'Comic Neue', cursive;
+    background-color: #9BE9DF;
 }
 
 .btn {
     font-family: 'Black Ops One', cursive;
+}
+
+.bg {
+    background-color: #0F3EE2;
 }
