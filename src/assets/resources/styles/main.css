@@ -10,3 +10,7 @@ body {
 .bg {
     background-color: #0F3EE2;
 }
+
+.shadow {
+    font-family: 'Black Ops One', cursive !important;
+}
