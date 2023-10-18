@@ -25,5 +25,11 @@ main {
     flex: 1 0 auto;
 }
 
+/*.form-group a {
+    visibility: hidden;
+    height: -5;
+    font-size: x-small;
+}*/
+
 /* row linha 
 s12 m4 l2 (small medium large)*/
