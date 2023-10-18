@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="/src/assets/resources/styles/main.css">
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <header class="navbar navbar-dark bg-primary py-5 border border-top-0 border border-warning border border-5">
         <div class="container-fluid">
             <a class="shadow navbar-brand" href="#">Listar</a>
@@ -28,16 +28,17 @@
         </div>
     </div>
 
-
-
-    <div class="position-absolute bottom-0 start-0">
-        <button onclick="Previous()" class="btn btn-primary" data-bs-toggle="button">Voltar</button>
-    </div>
-
-    <div class="position-absolute bottom-0 start-50">
+    <!--<div class="position-absolute bottom-0 start-50">
         <button onclick="ToEdit()" class="btn btn-primary" data-bs-toggle="button">Editar</button>
     </div>
+-->
 
+    <footer class="mt-auto">
+        <div class="position-relative bottom-100 start-0">
+            <button onclick="Previous()" class="btn btn-primary" data-bs-toggle="button">Voltar</button>
+        </div>
+
+    </footer>
     <script src="/src/assets/resources/scripts/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">

@@ -13,17 +13,23 @@
     <link rel="stylesheet" type="text/css" href="/src/assets/resources/styles/main.css">
 </head>
 
-<body>
-    <header class="navbar navbar-dark bg-primary py-5 border border-top-0 border border-warning border border-5">
+<body class="d-flex flex-column min-vh-100">
+    <header
+        class="d-flex justify-content-center navbar navbar-dark bg-primary py-5 border border-top-0 border border-warning border border-5">
+        <div class="d-flex justify-content-center">
+            <h1 class="shadow">U.M Gerenciador de Usuários</h1>
+        </div>
     </header>
-    <h1 class="text-center shadow">U.M Gerenciador de Usuários</h1>
-    <img src="/src/assets/resources/images/list.svg" height="100px" width="100px"
-        class="position-absolute top-25 start-50 translate-middle-x" /><!-- feito relativo para nao sobrepor H1 -->
+    <div><img src="/src/assets/resources/images/list.svg" height="100px" width="mt-auto"
+            class="position-absolute top-25 start-50 translate-middle-x" /><!-- feito relativo para nao sobrepor H1 -->
+    </div>
     <div class="position-absolute bottom-50 top-50 start-50 translate-middle">
         <button onclick="ToRegister()" class="btn btn-primary" data-bs-toggle="button">Registrar</button>
         <!-- onclick aqui -->
     </div>
+    <footer>
 
+    </footer>
 
     <script src="/src/assets/resources/scripts/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

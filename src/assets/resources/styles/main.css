@@ -1,6 +1,8 @@
 body {
     font-family: 'Comic Neue', cursive;
     background-color: #9BE9DF;
+    width: clamp(200px, 100%);
+    height: 100vh;
 
 }
 
@@ -14,16 +16,22 @@ body {
 
 .shadow {
     font-family: 'Black Ops One', cursive !important;
+    /*font-size: clamp(21px, 4vh, 28px);*/
+    font-size: 21.5px;
+    width: auto;
+    border: solid orange 1px;
+    border-radius: 50px;
+    padding: 20px;
 }
 
 /*
-	Fixa o rodapé
+	main {
+    flex: 1 0 auto;
+}Fixa o rodapé
 */
 
 
-main {
-    flex: 1 0 auto;
-}
+
 
 /*.form-group a {
     visibility: hidden;
