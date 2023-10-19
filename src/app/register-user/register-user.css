@@ -1,0 +1,15 @@
+.form-group input:focus {
+    outline: 2;
+}
+
+.form-group.error {
+    border-color: chocolate;
+}
+
+.form-group.sucess input {
+    border-color: chartreuse
+}
+
+.form-group.error input {
+    border-color: chocolate;
+}
