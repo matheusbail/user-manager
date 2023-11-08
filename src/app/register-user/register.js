@@ -11,9 +11,8 @@ const GenF = document.getElementById('generoFem');
 
 Form.addEventListener("submit", event => {
     event.preventDefault();
-
-
     validate();
+    saveLocal();
 });
 
 const setError = (element, message) => {
@@ -60,7 +59,18 @@ const validate = () => {
 
 
 
+/*function storeRecipe() {
+    let name = document.getElementById("recipe-name").value;
+    let description = document.getElementById("recipe-description").value
+    localStorage.setItem(name, description);
+}
+*/
 
+function saveLocal() {
+    let data = document.getElementById("nome").value;
+    let data2 = document.getElementById("email").value;
+    localStorage.setItem(data, data2);
+}
 
 
 
