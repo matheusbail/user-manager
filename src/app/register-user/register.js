@@ -16,6 +16,11 @@ Form.addEventListener("submit", event => {
     saveLocal();
 });
 
+window.addEventListener("onclick", event => {
+    event.preventDefault();
+
+})
+
 const setError = (element, message) => {
     const formGroup = element.parentElement;
     const errorDisplay = formGroup.querySelector('.error');
