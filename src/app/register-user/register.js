@@ -1,12 +1,13 @@
 const Form = document.getElementById('form-register');
 const Name = document.getElementById('nome');
 const Mail = document.getElementById('email');
-const Cpf = document.getElementById('cpf');
+
+/*const Cpf = document.getElementById('cpf');
 const Cep = document.getElementById('cep');
 const Fone = document.getElementById('fone');
 const GenM = document.getElementById('generoMasc');
 const GenF = document.getElementById('generoFem');
-
+*/
 
 
 
@@ -39,8 +40,6 @@ const sucess = element => {
     formGroup.classList.remove('error');
 }
 
-
-
 const validate = () => {
     const NameValue = Name.value.trim();
     const MailValue = Mail.value.trim();
@@ -57,20 +56,11 @@ const validate = () => {
     }
 
     if (MailValue === '') {
-        setError(Mail, 'EMAILAALSDMLASJDLHFLGHADH');
+        setError(Mail, 'Insira um Email valido');
     } else {
         sucess(Mail);
     }
 }
-
-
-
-/*function storeRecipe() {
-    let name = document.getElementById("recipe-name").value;
-    let description = document.getElementById("recipe-description").value
-    localStorage.setItem(name, description);
-}
-*/
 
 function saveLocal() {
     let nome = document.getElementById('nome').value;
@@ -96,13 +86,6 @@ function saveLocal() {
     let dataString = JSON.stringify(data);
     localStorage.setItem('data', dataString);
 }
-
-
-
-
-
-
-//dataEmail, dataCpf, dataCep, dataFone
 
 
 
