@@ -9,6 +9,7 @@ const GenF = document.getElementById('generoFem');
 
 
 
+
 Form.addEventListener("submit", event => {
     event.preventDefault();
     validate();
@@ -67,9 +68,28 @@ const validate = () => {
 */
 
 function saveLocal() {
-    let data = document.getElementById("nome").value;
-    let data2 = document.getElementById("email").value;
-    localStorage.setItem(data, data2);
+    let nome = document.getElementById('nome').value;
+    let email = document.getElementById('email').value;
+    let cpf = document.getElementById("cpf").value;
+    let cep = document.getElementById("cep").value;
+    let fone = document.getElementById("fone").value;
+
+    localStorage.setItem('nome', nome);
+    localStorage.setItem('email', email);
+    localStorage.setItem('cpf', cpf);
+    localStorage.setItem('cep', cep);
+    localStorage.setItem('fone', fone);
+
+    let data = {
+        nome: nome,
+        email: email,
+        cpf: cpf,
+        cep: cep,
+        fone: fone
+    };
+
+    let dataString = JSON.stringify(data);
+    localStorage.setItem('data', dataString);
 }
 
 
@@ -77,17 +97,7 @@ function saveLocal() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+//dataEmail, dataCpf, dataCep, dataFone
 
 
 
