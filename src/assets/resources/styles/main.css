@@ -9,14 +9,19 @@ body {
 
 .btn {
     font-family: 'Black Ops One', cursive;
+    color: aliceblue;
+    border: solid orange 1px;
 }
 
-.bg {
-    background-color: #0F3EE2;
+.navcolor {
+    background: rgb(82, 115, 230);
+    background: linear-gradient(90deg, rgba(82, 115, 230, 1) 22%, rgba(15, 62, 226, 1) 50%, rgba(77, 106, 207, 1) 80%);
 }
 
 .shadow {
     font-family: 'Black Ops One', cursive !important;
+    font-style: italic;
+    color: aliceblue;
     /*font-size: clamp(21px, 4vh, 28px);*/
     font-size: 21.5px;
     width: auto;

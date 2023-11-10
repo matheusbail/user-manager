@@ -56,7 +56,7 @@ const validate = () => {
     }
 
     if (MailValue === '') {
-        setError(Mail, 'Insira um Email valido');
+        setError(Mail, 'Insira um Email válido');
     } else {
         sucess(Mail);
     }
