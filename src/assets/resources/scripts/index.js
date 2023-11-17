@@ -6,6 +6,8 @@ function ToList() {
     window.location.href = "/src/app/show-users/user-list.html";
 }
 
+
+
 function ToEdit() {
     window.location.href = "/src/app/edit-user/edit-user.html"
 }
