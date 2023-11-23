@@ -68,19 +68,22 @@ function saveLocal() {
     let cpf = document.getElementById("cpf").value;
     let cep = document.getElementById("cep").value;
     let fone = document.getElementById("fone").value;
+    let cargo = document.getElementById("cargo").value;
 
     localStorage.setItem('nome', nome);
     localStorage.setItem('email', email);
     localStorage.setItem('cpf', cpf);
     localStorage.setItem('cep', cep);
     localStorage.setItem('fone', fone);
+    localStorage.setItem('cargo', cargo);
 
     let data = {
         nome: nome,
         email: email,
         cpf: cpf,
         cep: cep,
-        fone: fone
+        fone: fone,
+        cargo: cargo
     };
 
     let dataString = JSON.stringify(data);

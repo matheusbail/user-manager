@@ -1,0 +1,39 @@
+{
+    "user": [{
+            "id": 1,
+            "nome": "Gilmar Santos",
+            "email": "Gilmar@email.com",
+            "cpf": "798.980.000-12",
+            "cep": "65654-545",
+            "fone": "91212-1212",
+            "cargo": "Gerente"
+        }, {
+            "id": 2,
+            "nome": "Alan Silva",
+            "email": "SilvaA@email.com",
+            "cpf": "763.423.000-12",
+            "cep": "98712-545",
+            "fone": "98076-1212",
+            "cargo": "Vendedor"
+        },
+        {
+            "id": 3,
+            "nome": "Ana Albuquerque",
+            "email": "Ana@email.com",
+            "cpf": "666.665.000-77",
+            "cep": "53412-978",
+            "fone": "94321-1212",
+            "cargo": "Diretora Geral"
+        },
+        {
+            "id": 4,
+            "nome": "Paulo Ahti",
+            "email": "Ahti@email.com",
+            "cpf": "676.231.000-12",
+            "cep": "88888-425",
+            "fone": "92312-9872",
+            "cargo": "Zelador"
+        }
+
+    ]
+}
