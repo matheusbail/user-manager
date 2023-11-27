@@ -10,9 +10,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Comic+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/src/assets/resources/styles/main.css">
+    <link rel="stylesheet" href="/src/app/show-users/user-list.css">
 </head>
 
 <body class="d-flex flex-column min-vh-100">
+    <div id="fade" class="hide">
+        <div id="loader" class="spinner-border text-info hide" role="status">
+            <span class="visually-hidden">Loading</span>
+        </div>
+    </div>
     <header class="navbar navbar-dark navcolor py-5 border border-top-0 border border-warning border border-5">
         <div class="container-fluid">
             <div class="position-relative">
@@ -38,22 +44,26 @@
             </div>
         </div>
     </div>
-
     <!--<div class="position-absolute bottom-0 start-50">
         <button onclick="ToEdit()" class="btn btn-primary" data-bs-toggle="button">Editar</button>
     </div>
 -->
 
     <footer class="mt-auto">
+        <div><input type="text" name="cep" id="cep">
+            <button type="button" class=" btn-primary" name="consulta" id="consulta">Consultar Bairro</button>
+            <span id="cepOutput"></span>
+        </div>
     </footer>
-    <script src="/src/assets/resources/scripts/index.js"></script>
-    <script src="/src/app/show-users/user-list.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
         integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous">
     </script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/src/assets/resources/scripts/index.js"></script>
+    <script src="/src/app/show-users/user-list.js"></script>
 </body>
 
 </html>
