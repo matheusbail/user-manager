@@ -6,14 +6,23 @@ window.addEventListener("load", event => {
 })
 
 function readJson() {
+    //  let string = localStorage.getItem('data');
+    //let jsonString = JSON.stringify(string);
+    //const dados = document.getElementById('infos');
+    //dados.innerHTML = JSON.parse(jsonString);
+
     let string = localStorage.getItem('data');
-    let jsonString = JSON.stringify(string);
+    let jsonString = JSON.parse(string);
     const dados = document.getElementById('infos');
-
-    dados.innerHTML = JSON.parse(jsonString);
+    dados.innerHTML = ` 
+    <p>${jsonString.nome}</p>
+    <p>${jsonString.email}</p>
+    <p>${jsonString.cpf}</p>
+    <p>${jsonString.cep}</p>
+    <p>${jsonString.fone}</p>
+    <p>${jsonString.cargo}</p>
+    `;
 }
-
-
 
 fetch("http://localhost:3000/user?_page=1&_limit=1")
     .then((req) => req.json())
