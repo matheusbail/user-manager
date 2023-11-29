@@ -29,6 +29,11 @@ body {
     padding: 20px;
 }
 
+.imgTeste {
+    height: auto;
+    max-width: 10rem;
+}
+
 /*
 	main {
     flex: 1 0 auto;

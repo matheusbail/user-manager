@@ -15,3 +15,9 @@ function ToEdit() {
 function Previous() {
     window.history.back();
 }
+
+
+$(document).ready(function () {
+    $('#imgTeste').css('display', 'none');
+    $('#imgTeste').fadeIn(2000);
+})
