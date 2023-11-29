@@ -20,4 +20,5 @@ function Previous() {
 $(document).ready(function () {
     $('#imgTeste').css('display', 'none');
     $('#imgTeste').fadeIn(2000);
+    $('#imgTeste').fadeOut(3000);
 })
