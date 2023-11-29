@@ -1,5 +1,5 @@
 body {
-    font-family: 'Comic Neue', cursive;
+    font-family: 'Inter', light;
     background: rgb(96, 226, 209);
     background: linear-gradient(90deg, rgba(96, 226, 209, 1) 15%, rgba(7, 250, 220, 1) 50%, rgba(95, 219, 203, 1) 84%);
     width: clamp(200px, 100%);
@@ -22,7 +22,6 @@ body {
     font-family: 'Black Ops One', cursive !important;
     font-style: italic;
     color: aliceblue;
-    /*font-size: clamp(21px, 4vh, 28px);*/
     font-size: 21.5px;
     width: auto;
     border: solid orange 1px;

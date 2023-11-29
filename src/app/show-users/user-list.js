@@ -64,7 +64,7 @@ cep.addEventListener("blur", (e) => {
         cache: 'default'
     }
 
-    fetch(`https://viacep.com.br/ws/${busca}/json/`, options)
+    fetch(`https://viacep.com.br/ws/${busca}/json/`, options) // crase evita o uso do + para concatenação, no caso de uma variavel de busca
         .then(response => {
             response.json()
                 .then(data => document.getElementById('cepOutput').innerHTML = data.localidade)

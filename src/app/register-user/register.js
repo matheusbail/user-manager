@@ -43,11 +43,6 @@ const sucess = element => {
 const validate = () => {
     const NameValue = Name.value.trim();
     const MailValue = Mail.value.trim();
-    /* const CpfValue = Cpf.value.trim();
-     const CepValue = Cep.value.trim();
-     const FoneValue = Fone.value.trim();
-     const GenMValue = GenM.value.trim();
-     const GenFValue = GenF.value.trim();*/
 
     if (NameValue === '') {
         setError(Name, 'Nome de usuário é necessário');
