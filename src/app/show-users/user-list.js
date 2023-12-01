@@ -1,8 +1,9 @@
 window.addEventListener("load", event => {
     event.preventDefault();
     readJson();
-    // toggleLoader();
+    //toggleLoader();
     //readJsonF(user);
+
 })
 
 function readJson() {
@@ -24,7 +25,6 @@ fetch("http://localhost:3000/user?_page=1&_limit=1")
     .then((data) => readJsonF(data));
 
 function readJsonF(user) { // CONSULTA O ARQUIVO JSON E RETORNA OS DADOS
-
     const html = user.map(
         (dado) => `
         <p>${dado.nome}</p>
@@ -33,7 +33,6 @@ function readJsonF(user) { // CONSULTA O ARQUIVO JSON E RETORNA OS DADOS
         <p>${dado.cep}</p>
         <p>${dado.fone}</p>
         <p>${dado.cargo}</p>
-
         `
     );
     document.getElementById('infosY').innerHTML = html;
@@ -47,6 +46,10 @@ const toggleLoader = () => { // FAZ O LOAD APARECER MUDANDO A CLASSE DOS DIVS
     loaderElement.classList.toggle("hide");
 }
 
+function clean() {
+    window.localStorage.clear();
+    location.reload();
+}
 
 const checkCep = document.querySelector("#cep") // seleciona o span com a id cep para o evento de blur ser escutado
 
