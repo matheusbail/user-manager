@@ -4,6 +4,8 @@ Link para o protótipo Mobile no Figma: https://www.figma.com/proto/hV1ypngKWFhb
 
 Link para o protótipo Web no Figma: https://www.figma.com/proto/hV1ypngKWFhbr1zPo1afQp/User-Manager?node-id=5-7
 
+Link para o video no youtube demostrando o projeto: https://youtu.be/SqlWz8CWKto
+
 
     RA1 - Utilizar Frameworks CSS para estilização de elementos HTML e criação de layouts responsivos.
  - [x]  ID1 - Implementa um layout responsivo de uma página web utilizando um Framework CSS, como Bootstrap, Materialize ou Tailwind, que se adapta adequadamente a diferentes tamanhos de tela e dispositivos.
